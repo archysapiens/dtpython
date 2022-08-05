@@ -20,17 +20,6 @@
         })
         $('#vtnmail').modal('show');
     });
-
-    $(document).on('click', '#btn-modal-up', function(){
-        $('#vtnup').modal({
-            backdrop:'static',
-            keyboard:false
-        })
-        $('#vtnup').modal('show');
-    });
-
-
-
     //mensaje al enviar email
     function mensaje(){
         swal({
@@ -318,58 +307,7 @@
 <!--  /////// Nota de los demas botonos dentro del formulario solo cambie el icono y su id para tener la funcionalidad del modal -->
 
 
-                                    <!--parte "Alex Chimal"-->
-                                    <td>
-                                        <a id="btn-modal-up" class="btn btn btn-info" >
-                                       <i class="fa fa-arrow-up fa-2x"></i>  </a>
-
-                                       <div class="modal fade" tabindex="-1" id="vtnup">
-                                        <div class="modal-dialog" style="min-width:500px;" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-
-                                                    <h2><img src="../images/arrows.png" style="  width: 50px;" class="img-circle">Subir Comentarios y/o Archivos</h2>
-
-
-                                                     <!--Subir comentarios y/o cargar archivos -->
-                                                </div>
-                                                <div class="modal-body">
-
-                                                    <div class=""input-group">
-                                                        <!-- <h2>Inserte Archivos</h2> -->
-
-                                                            <label for="email">Ingrese Comentarios:</label>
-
-                                                            <textarea class="form-control" rows="5" id="" name="mensaje" required="" autofocus="" readonly >Ingrese comentarios </textarea>
-                                                            <br>
-                                                            <button class="btn btn-success" type="button" data-dismiss="modal" onclick="mensaje()">Enviar</button>
-                                                            <br>
-                                                            <br>
-                                                            <br>
-                                                            <!-- <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple /> -->
-                                                            <label for="email">Seleccione Archivos:</label>
-                                                            <input type="file" name="file" id="file" data-multiple-caption="{count} files selected" multiple />
-                                                            <br> <!-- class="btn btn-primary" -->
-                                                            <button class="btn btn-default" type="button" data-dismiss="modal" onclick="mensaje()">Cargar</button>
-                                                            <br>
-
-
-                                                      </div>
-
-
-
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button class="btn btn-success" type="button" data-dismiss="modal">
-                                                        Cerrar
-                                                    </button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                   </div>
-                                    </td>
-                                  <!--fin "Alex Chimal" -->
+                              
 
 
 
@@ -407,13 +345,6 @@
                                             <i class="fa fa-share-alt-square fa-2x"></i>  </a>
 
                                     </td>
-
-
-                                                                        <td>
-                                      <a id="btn-modal-up" class="btn btn btn-info" >
-                                        <i class="fa fa-arrow-up fa-2x"></i>  </a>
-                                    </td>
-
 
                                 </tr>
 								
@@ -456,12 +387,6 @@
 
                                     </td>
 
-                                                                        <td>
-                                      <a id="btn-modal-up" class="btn btn btn-info" >
-                                        <i class="fa fa-arrow-up fa-2x"></i>  </a>
-                                    </td>
-
-
                                 </tr>
 								
 
@@ -498,10 +423,6 @@
                                             <i class="fa fa-share-alt-square fa-2x"></i>  </a>
 
                                     </td>
-                                                                        <td>
-                                      <a id="btn-modal-up" class="btn btn btn-info" >
-                                        <i class="fa fa-arrow-up fa-2x"></i>  </a>
-                                    </td>
 
                                 </tr>
 
@@ -534,10 +455,6 @@
                                         <a href="#" id="btn-modal-mail"  class="btn  btn-outline btn-primary" >
                                        <i class="fa fa-share-alt-square fa-2x"></i>  </a>
 
-                                    </td>
-                                                                        <td>
-                                      <a id="btn-modal-up" class="btn btn btn-info" >
-                                        <i class="fa fa-arrow-up fa-2x"></i>  </a>
                                     </td>
 
 
@@ -572,11 +489,6 @@
                                         <a href="#" id="btn-modal-mail"  class="btn  btn-outline btn-primary" >
                                             <i class="fa fa-share-alt-square fa-2x"></i>  </a>
 
-                                    </td>
-
-                                                                        <td>
-                                      <a id="btn-modal-up" class="btn btn btn-info" >
-                                        <i class="fa fa-arrow-up fa-2x"></i>  </a>
                                     </td>
 
 
