@@ -106,3 +106,8 @@ def do_full_test(request):
 def alex(request):
     html_file = "core/dtap_inbox_alex.html"
     return render(request, html_file)
+
+@csrf_exempt
+def Checkers(request):
+    html_file = "core/checkers.html"
+    return render(request, html_file)
