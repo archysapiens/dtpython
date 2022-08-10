@@ -1,229 +1,207 @@
-{% extends 'dtproto_base.html' %}
-
-
-                {% block titulo %}
-        DATA OWNER
-                {%  endblock %}
-
-
-
-{% block content %}
 {% load static %}
+
+
+    <!-- DROPZONE -->
+    <script src="static/core/js/plugins/dropzone/dropzone.js"></script>
 <div class="row">
 
 
 
-			<div class="col-lg-6">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <h5>Load Section <small>Secciòn de descaga de Template </small></h5>
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Load Section <small>Secciòn de descaga de Template </small></h5>
 
-                        <div class="ibox-tools">
-                            <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
-                            </a>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="fa fa-wrench"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-user">
-                                <li><a href="#">Config option 1</a>
-                                </li>
-                                <li><a href="#">Config option 2</a>
-                                </li>
-                            </ul>
-                            <a class="close-link">
-                                <i class="fa fa-times"></i>
-                            </a>
-                        </div>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#">Config option 1</a>
+                        </li>
+                        <li><a href="#">Config option 2</a>
+                        </li>
+                    </ul>
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
 
 
-                    </div>
+            </div>
 
-                    <div class="ibox-content">
-                        <div class="row">
-                            <div class="col-sm-6 b-r"><h3 class="m-t-none m-b">Template</h3>
-                                <p>En esta seccion se tiene disponibilidad de descargar el archivo template con.</p>
-                                <p>El template contiene las columnas predefinidas que establecen la estructura del archivo de entrada.</p>
-                                <p>Simplemente haga click en la imagen </p>
-                                <form role="form">
-                                    <div class="form-group"></div>
-                                    <div class="form-group"></div>
-                                    <div>
-                                        <!--
+            <div class="ibox-content">
+                <div class="row" style=" height: 275px;">
+                    <div class="col-sm-6 b-r">
+                        <h3 class="m-t-none m-b">Template</h3>
+                        <p>En esta seccion se tiene disponibilidad de descargar el archivo template con.</p>
+                        <p>El template contiene las columnas predefinidas que establecen la estructura del archivo de
+                            entrada.</p>
+                        <p>Simplemente haga click en la imagen </p>
+                        <form role="form">
+                            <div class="form-group"></div>
+                            <div class="form-group"></div>
+                            <div>
+                                <!--
                                         <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Log in</strong></button>
                                         <label> <input type="checkbox" class="i-checks"> Remember me </label>
                                         -->
-                                    </div>
-                                </form>
                             </div>
-
-                            <div class="col-sm-6"><h4>Excel Template</h4>
-                                <p>Puedes descargar la plantilla, Click:</p>
-                                <p class="text-center">
-                                    <a href="{% static 'core/LayOut.xlsx' %}"><i class="fa fa-cloud-download big-icon"></i></a>
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-				</div>
-
-
-			<!-- seccion columna -->
-                <div class="col-lg-6">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <h5>Dropzone Area</h5>
-                        <div class="ibox-tools">
-                            <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
-                            </a>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="fa fa-wrench"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-user">
-                                <li><a href="#">Config option 1</a>
-                                </li>
-                                <li><a href="#">Config option 2</a>
-                                </li>
-                            </ul>
-                            <a class="close-link">
-                                <i class="fa fa-times"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="ibox-content">
-                        <!-- <form id="my-awesome-dropzone" class="dropzone" action="/do_full"> -->
-                        <form id="my-awesome-dropzone" class="dropzone" action="/do_full">
-
-                            <div class="dropzone-previews"></div>
-
-                            <button id="upload_file" type="submit" class="btn btn-primary pull-right">Upload File!</button>
-                            <button id="clean_dropzone" type="button" class="btn btn-primary pull-right">Clean Files!</button>
                         </form>
-                        <div>
-                            <div class="m text-right">
-							</div>
-                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h4>Excel Template</h4>
+                        <p>Puedes descargar la plantilla, Click:</p>
+                        <p class="text-center">
+                            <a href="{% static 'core/LayOut.xlsx' %}"><i class="fa fa-cloud-download big-icon"></i></a>
+                        </p>
                     </div>
 
                 </div>
             </div>
+        </div>
+    </div>
 
-			</div>
+
+    <!-- seccion columna -->
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Dropzone Area</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#">Config option 1</a>
+                        </li>
+                        <li><a href="#">Config option 2</a>
+                        </li>
+                    </ul>
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ibox-content" >
+                <!-- <form id="my-awesome-dropzone" class="dropzone" action="/do_full"> -->
+                <form id="my-awesome-dropzone" class="dropzone" action="/do_full" >
+
+                    <div class="dropzone-previews"></div>
+
+                    <button id="upload_file" type="submit" class="btn btn-primary pull-right">Upload File!</button>
+                    <button id="clean_dropzone" type="button" class="btn btn-primary pull-right">Clean Files!</button>
+                </form>
+                <div>
+                    <div class="m text-right">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
 
 <script>
+    Dropzone.autoDiscover = false;
 
-    $('#clean_dropzone').click(function(){
+    $('#clean_dropzone').click(function () {
         console.log('clean_dropzone');
         Dropzone.forElement('#my-awesome-dropzone').removeAllFiles(true);
 
     });
 
 
-    $('#upload_file').click(function(){
+    $('#upload_file').click(function () {
         console.log('#upload_file');
 
     });
-//    my-awesome-dropzone.on("addedfiles", function(file) {
-//            console.log('files added' + files.name  );
-//            console.log(files.length + ' files added');
-//        });
+    //    my-awesome-dropzone.on("addedfiles", function(file) {
+    //            console.log('files added' + files.name  );
+    //            console.log(files.length + ' files added');
+    //        });
 
 
-//var myNewdDropzone = new Dropzone("#my-awesome-dropzone",  {
+    //var myNewdDropzone = new Dropzone("#my-awesome-dropzone",  {
 
-Dropzone.options.myAwesomeDropzone = {
-    //url: "/do_full_test",
-    method: "POST",
-    addRemoveLinks: false,
-    uploadMultiple: false,
-    clickable: true,
-    //previewTemplate: document.querySelector('#preview-template').innerHTML,
-    init : function() {
-        this.on("addedfile", function(file) {
+    Dropzone.options.myAwesomeDropzone = {
+        //url: "/do_full_test",
+        method: "POST",
+        addRemoveLinks: false,
+        uploadMultiple: false,
+        clickable: true,
+        //previewTemplate: document.querySelector('#preview-template').innerHTML,
+        init: function () {
+            this.on("addedfile", function (file) {
 
-        var thumbnail = $('.dropzone .dz-preview.dz-file-preview .dz-image:last');
-        console.log('files added' + file.name  );
-        //$(file.previewElement).find(".dz-image img").attr("src", "http://127.0.0.1:8000/static/core/images/citibnm.png")
+                var thumbnail = $('.dropzone .dz-preview.dz-file-preview .dz-image:last');
+                console.log('files added' + file.name);
+                //$(file.previewElement).find(".dz-image img").attr("src", "http://127.0.0.1:8000/static/core/images/citibnm.png")
 
-        //thumbnail.css('background', 'url(http://127.0.0.1:8000/static/core/images/citibnm.png)');
-        // ESTA SI FUNCIONO
-        this.emit("thumbnail", file, "http://127.0.0.1:8000/static/core/images/citibnm.png");
-
-
-
-                 var contenido=
-
-          '<div>'+
-          '<p> DEBUG EN esta seccion se valida el formato, numero de columnas, tipos de datops, en caso de error no se carga archivo, en caso de  datos correctos, el archivo se carga</p>' +
-'                                               </div> <hr>'  +
-'<p class="alert alert-info">' +
- ' En caso de inconsistencias en el archivo se mostrara una lista y deberan ser corregidos para poder ingresar los datos al ejercicio ' +
-  '                                                       </p> '  ;
+                //thumbnail.css('background', 'url(http://127.0.0.1:8000/static/core/images/citibnm.png)');
+                // ESTA SI FUNCIONO
+                this.emit("thumbnail", file, "http://127.0.0.1:8000/static/core/images/citibnm.png");
 
 
 
+                var contenido =
 
-               $.alert({
-                icon: 'fa fa-info-circle fa-2x fa-fw',
-                title: 'Validacion de archivo Inicial',
-                content: contenido,
-                columnClass: 'medium',
-                animationSpeed:800,
-                animationBounce:1,
-                animation: 'zoom',
-                closeAnimation: 'zoom',
-                 animationBounce: 1.5,
-                animateFromElement: false,
-                theme: 'material',
-                type: 'blue',
-                buttons: {
-                    Aceptar: {               btnClass: 'btn-green',
-                         action:function () {  }
+                    '<div>' +
+                    '<p> DEBUG EN esta seccion se valida el formato, numero de columnas, tipos de datops, en caso de error no se carga archivo, en caso de  datos correctos, el archivo se carga</p>' +
+                    '                                               </div> <hr>' +
+                    '<p class="alert alert-info">' +
+                    ' En caso de inconsistencias en el archivo se mostrara una lista y deberan ser corregidos para poder ingresar los datos al ejercicio ' +
+                    '                                                       </p> ';
+
+
+
+
+                $.alert({
+                    icon: 'fa fa-info-circle fa-2x fa-fw',
+                    title: 'Validacion de archivo Inicial',
+                    content: contenido,
+                    columnClass: 'medium',
+                    animationSpeed: 800,
+                    animationBounce: 1,
+                    animation: 'zoom',
+                    closeAnimation: 'zoom',
+                    animationBounce: 1.5,
+                    animateFromElement: false,
+                    theme: 'material',
+                    type: 'blue',
+                    buttons: {
+                        Aceptar: {
+                            btnClass: 'btn-green',
+                            action: function () { }
+                        }
                     }
-                }
+                });
+
+
+
+
+
+
             });
-
-
-
-
-
-
-        });
-        this.on("reset", function() { console.log('RESET Listener'); });
-        this.on("success", function(file,response) { console.log('SUCCESS Listener >>'+ response); });
-//        this.on("thumbnail", function(file,fileurl) { new_thumbnail_added(file); });
- //       this.on("removedfile", function(file) { new_file_removed(file); });
-  //      this.on("totaluploadprogress", function(progress) { display_progress(progress); });
-  //      this.on("queuecomplete", function() { all_files_uploaded(); });
-    //this.on("processing", function(file) { new_file_processed(file); });
-    }
-};
+            this.on("reset", function () { console.log('RESET Listener'); });
+            this.on("success", function (file, response) { console.log('SUCCESS Listener >>' + response); });
+            //        this.on("thumbnail", function(file,fileurl) { new_thumbnail_added(file); });
+            //       this.on("removedfile", function(file) { new_file_removed(file); });
+            //      this.on("totaluploadprogress", function(progress) { display_progress(progress); });
+            //      this.on("queuecomplete", function() { all_files_uploaded(); });
+            //this.on("processing", function(file) { new_file_processed(file); });
+        }
+    };
 
 </script>
 
-{% endblock %}
 
-
-
-{%block menu  %}
-<li>
-					   <a   href="/do_ini" id="dtap_inbox"
-                                class="btn btn-w-m btn-outline btn-default ">
-                        <i class="fa fa fa-cogs fa-2x pull-left"></i>
-                        <span class="nav-label ">Inbox</span>
-                        </a>
-</li>
-
-<li>
-                       <a id="Buscar" href="/do_dropzone"
-                                class="btn btn-w-m btn-outline btn-default ">
-                        <i class="fa  fa-cloud-upload fa-2x pull-left"></i>
-                        <span class="nav-label">Nuevo Ejercicio</span>
-                        </a>
-</li>
-
-{% endblock %}

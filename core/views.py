@@ -86,6 +86,11 @@ def felix(request):
     return render(request, html_file)
 
 @csrf_exempt
+def documentos(request):
+    html_file = "core/docreq.html"
+    return render(request, html_file)
+
+@csrf_exempt
 def do_full_test(request):
     if request.method == "POST":
         uploaded_file = request.FILES['document']
