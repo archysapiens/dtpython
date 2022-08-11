@@ -39,6 +39,7 @@ urlpatterns = [
     path('lineage', lineage_views.lineage, name="lineage"),
     path('jqgrid', lineage_views.jqgrid, name="jqgrid"),
     path('felix', views.felix, name="felix"),
+    path('documentos', views.documentos, name="documentos"),
     path('alex', views.alex, name="alex"),
 ]
 
